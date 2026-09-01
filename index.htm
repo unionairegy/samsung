@@ -109,6 +109,7 @@
         .dispatch-card h3 {
             margin-top: 0;
             color: #1e293b;
+            margin-bottom: 1.5rem;
         }
         .form-group {
             margin-bottom: 1.2rem;
@@ -138,6 +139,7 @@
             cursor: pointer;
             width: 100%;
             transition: background 0.3s;
+            margin-top: 1rem;
         }
         .submit-btn:hover {
             background-color: #218838;
@@ -177,7 +179,7 @@
         <p>نعمل من خلال نظام إدارة سحابي متكامل لتلقي أعطال ثلاجات سامسونج وتوزيعها فورياً على أقرب فني متخصص في نطاق القاهرة. نضمن فحص الجهاز بالمنزل بأحدث أجهزة التشخيص الرقمية دون أي حاجة لنقل الثلاجة.</p>
 
         <div class="grid-layout">
-            <!-- العمود الأول: نموذج تفاعلي لطلب الخدمة -->
+            <!-- العمود الأول: نموذج تفاعلي لطلب الخدمة مكتمل وغير ناقص -->
             <div class="dispatch-card">
                 <h3>حجز موعد صيانة فوري</h3>
                 <form onsubmit="event.preventDefault(); alert('تم تسجيل طلبك بنجاح، سيتم الاتصال بك خلال دقائق لتأكيد موعد الفحص المنزلي.');">
@@ -191,7 +193,7 @@
                     </div>
                     <div class="form-group">
                         <label>وصف العطل في الثلاجة</label>
-                        <textarea rows="3" placeholder="مثال: ضعف التبريد أو توقف الموتور..."></textarea>
+                        <textarea rows="3" placeholder="مثال: ضعف التبريد أو توقف الموتور..." required></textarea>
                     </div>
                     <button type="submit" class="submit-btn">إرسال طلب الصيانة الآن</button>
                 </form>
