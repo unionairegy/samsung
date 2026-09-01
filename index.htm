@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صيانة ثلاجات سامسونج - خدمة منزلية</title>
-    <meta name="description" content="صيانة ثلاجات سامسونج - 13 ش بستان الدكه، عرابي، الأزبكية، محافظة القاهرة. خدمة صيانة منزلية فورية لثلاجات سامسونج على مدار الساعة.">
+    <title>صيانة ثلاجات سامسونج - مركز الخدمة والإصلاح المنزلي</title>
+    <meta name="description" content="صيانة ثلاجات سامسونج في 13 ش بستان الدكه، عرابي، الأزبكية، القاهرة. احجز خدمة فحص وإصلاح الثلاجات بالمنزل فوراً على مدار الساعة.">
     
-    <!-- Schema.org Markup (Exact Map Mirror Match) -->
+    <!-- Schema.org Markup (Exact Match with Map Name & NAP) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -49,65 +49,118 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.8;
-            background-color: #f9f9f9;
+            background-color: #f4f6f9;
             color: #333;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #1a73e8;
+            background: linear-gradient(135deg, #1a73e8, #0d47a1);
             color: white;
-            padding: 2.5rem 1rem;
+            padding: 3rem 1rem;
             text-align: center;
+        }
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.2rem;
+        }
+        header p {
+            margin: 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
         }
         .container {
-            max-width: 900px;
-            margin: 2.5rem auto;
+            max-width: 1000px;
+            margin: -2rem auto 2rem auto;
             background: white;
             padding: 2.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            position: relative;
         }
-        h1, h2, h3 {
+        h2 {
             color: #1a73e8;
+            border-right: 4px solid #1a73e8;
+            padding-right: 12px;
+            margin-top: 2rem;
+            font-size: 1.4rem;
         }
         p {
-            margin-bottom: 1.2rem;
             font-size: 1.05rem;
+            color: #555;
         }
-        ul {
-            margin-bottom: 1.5rem;
-            padding-right: 1.5rem;
+        .grid-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
         }
-        li {
+        @media(max-width: 768px) {
+            .grid-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+        .dispatch-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        .dispatch-card h3 {
+            margin-top: 0;
+            color: #1e293b;
+        }
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+        .form-group label {
+            display: block;
             margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #334155;
         }
-        .contact-box {
-            background: #e8f0fe;
-            padding: 1.5rem;
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #cbd5e1;
             border-radius: 6px;
-            margin: 2rem 0;
-            border-right: 4px solid #1a73e8;
+            font-size: 1rem;
+            box-sizing: border-box;
         }
-        .btn {
-            display: inline-block;
+        .submit-btn {
             background-color: #28a745;
             color: white;
-            padding: 0.75rem 1.5rem;
-            text-decoration: none;
-            border-radius: 4px;
+            border: none;
+            padding: 0.85rem 1.5rem;
+            font-size: 1rem;
             font-weight: bold;
-            margin-top: 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
         }
-        .map-container {
-            margin-top: 2rem;
-            text-align: center;
+        .submit-btn:hover {
+            background-color: #218838;
+        }
+        .info-box {
+            background: #eef2ff;
+            border-right: 4px solid #6366f1;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+        }
+        .info-box p {
+            margin: 0.5rem 0;
+            color: #1e1b4b;
+        }
+        .map-wrapper {
+            margin-top: 2.5rem;
         }
         iframe {
             width: 100%;
-            height: 450px;
+            height: 400px;
             border: 0;
-            border-radius: 6px;
+            border-radius: 8px;
         }
     </style>
 </head>
@@ -115,33 +168,57 @@
 
     <header>
         <h1>صيانة ثلاجات سامسونج</h1>
-        <p>خدمة صيانة منزلية وإصلاح أعطال الثلاجات بموقعنا في الأزبكية</p>
+        <p>غرفة العمليات المركزية لتلقي بلاغات صيانة الثلاجات وتوجيه الفرق الفنية بالمنزل</p>
     </header>
 
     <div class="container">
-        <h2>خدمات صيانة ثلاجات سامسونج المنزلية</h2>
-        <p>نقدم خدمات الدعم الفني والصيانة المباشرة لثلاجات سامسونج في نطاق القاهرة. نعتمد على فحص الأعطال وإصلاحها بالمنزل لضمان كفاءة التبريد وحماية الجهاز.</p>
+        
+        <h2>آلية تشغيل واستقبال البلاغات</h2>
+        <p>نعمل من خلال نظام إدارة سحابي متكامل لتلقي أعطال ثلاجات سامسونج وتوزيعها فورياً على أقرب فني متخصص في نطاق القاهرة. نضمن فحص الجهاز بالمنزل بأحدث أجهزة التشخيص الرقمية دون أي حاجة لنقل الثلاجة.</p>
 
-        <h3>أبرز الأعطال التي نقوم بمعالجتها:</h3>
-        <ul>
-            <li><strong>ضعف التبريد أو انعدامه:</strong> فحص الدائرة وشحن غاز الفريون ومعالجة التسريبات.</li>
-            <li><strong>تراكم الثلج:</strong> فحص نظام الإذابة التلقائية (Defrost) ومعالجة انسداد الصرف.</li>
-            <li><strong>أعطال التوقف المفاجئ:</strong> اختبار لوحات التحكم ومكونات التبريد الرئيسية.</li>
-        </ul>
+        <div class="grid-layout">
+            <!-- العمود الأول: نموذج تفاعلي لطلب الخدمة -->
+            <div class="dispatch-card">
+                <h3>حجز موعد صيانة فوري</h3>
+                <form onsubmit="event.preventDefault(); alert('تم تسجيل طلبك بنجاح، سيتم الاتصال بك خلال دقائق لتأكيد موعد الفحص المنزلي.');">
+                    <div class="form-group">
+                        <label>اسم العميل الكريم</label>
+                        <input type="text" placeholder="اكتب اسمك هنا" required>
+                    </div>
+                    <div class="form-group">
+                        <label>رقم الهاتف للتواصل</label>
+                        <input type="tel" placeholder="01xxxxxxxxx" required>
+                    </div>
+                    <div class="form-group">
+                        <label>وصف العطل في الثلاجة</label>
+                        <textarea rows="3" placeholder="مثال: ضعف التبريد أو توقف الموتور..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">إرسال طلب الصيانة الآن</button>
+                </form>
+            </div>
 
-        <div class="contact-box">
-            <h3>بيانات الموقع والاتصال الرسمية</h3>
-            <p><strong>اسم النشاط:</strong> صيانة ثلاجات سامسونج</p>
-            <p><strong>العنوان المطابق للخريطة:</strong> 13 ش بستان الدكه، عرابي، الأزبكية، محافظة القاهرة 4320103</p>
-            <p><strong>رقم الهاتف:</strong> <a href="tel:+201025130063" dir="ltr">+20 102 513 0063</a></p>
-            <p><strong>ساعات العمل:</strong> مفتوح على مدار الساعة</p>
-            <a href="tel:+201025130063" class="btn">اتصل بنا الآن للاصلاح الفوري</a>
+            <!-- العمود الثاني: بيانات التواصل والتشغيل (مطابقة للخريطة حرفياً) -->
+            <div>
+                <div class="info-box">
+                    <h3>بيانات نقطة التشغيل والخدمة</h3>
+                    <p><strong>اسم النشاط:</strong> صيانة ثلاجات سامسونج</p>
+                    <p><strong>العنوان الرئيسي:</strong> 13 ش بستان الدكه، عرابي، الأزبكية، محافظة القاهرة 4320103</p>
+                    <p><strong>رقم الخط الساخن:</strong> <a href="tel:+201025130063" dir="ltr" style="color: #1a73e8; font-weight: bold;">+20 102 513 0063</a></p>
+                    <p><strong>حالة التشغيل:</strong> يستقبل البلاغات ويقوم بالتوجيه على مدار الساعة (24/7)</p>
+                </div>
+
+                <div style="margin-top: 1.5rem; text-align: center;">
+                    <a href="tel:+201025130063" style="display: block; background: #1a73e8; color: white; padding: 1rem; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1rem;">اتصال مباشر بغرفة العمليات والفنيين</a>
+                </div>
+            </div>
         </div>
 
-        <div class="map-container">
-            <h2>موقعنا الجغرافي المسجل</h2>
+        <!-- خريطة الموقع الجغرافي -->
+        <div class="map-wrapper">
+            <h2>النطاق الجغرافي لخدمات الدعم والتشغيل</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.377450213563!2d31.243557499999998!3d30.054713399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458410007c50ddb%3A0xe8173d3ccd1011c5!2z2LXZitin2YbYqSDYq9mE2KfYrNin2Kog2LPYp9mF2LPZiNmG2Kw!5e0!3m2!1sar!2seg!4v1788297580870!5m2!1sar!2seg" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </div>
+
     </div>
 
 </body>
