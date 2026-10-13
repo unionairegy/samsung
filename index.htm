@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صيانة ثلاجات سامسونج - مركز الخدمة والإصلاح المنزلي</title>
-    <meta name="description" content="صيانة ثلاجات سامسونج في 13 ش بستان الدكه، عرابي، الأزبكية، القاهرة. احجز خدمة فحص وإصلاح الثلاجات بالمنزل فوراً على مدار الساعة.">
-    
-    <!-- Schema.org Markup (Exact Match with Map Name & NAP) -->
+
+    <title>تصليح أجهزة وثلاجات سامسونج بالمنزل | فني فحص وتبريد فوري</title>
+
+    <meta name="description"
+          content="خدمة فحص وتصليح ثلاجات وديب فريزر سامسونج بالمنزل فوري. حل مشاكل ضعف التبريد، تكتكة الموتور، كتل الثلج، تسريب الميه. اتصل الآن: 01156174546">
+
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
+    <!-- Canonical Tag لتفادي مشاكل الأرشفة -->
+    <link rel="canonical" href="https://samsung.maintenance-eg.net/">
+
+    <!-- Schema.org Markup (مطابق للـ NAP والخريطة مع تحديث الرقم والإيميل) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "HomeAndConstructionBusiness",
       "name": "صيانة ثلاجات سامسونج",
-      "url": "https://samsung.maintenance-eg.net",
-      "telephone": "+201025130063",
+      "url": "https://samsung.maintenance-eg.net/",
+      "telephone": "+201156174546",
+      "email": "ed3mnyit@gmail.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "13 ش بستان الدكه، عرابي",
@@ -27,6 +36,22 @@
         "latitude": 30.0547134,
         "longitude": 31.2435575
       },
+      "areaServed": [
+        "الأزبكية",
+        "وسط البلد",
+        "رمسيس",
+        "شبرا",
+        "العباسية",
+        "حدائق القبة",
+        "مصر والسودان",
+        "مدينة نصر",
+        "مصر الجديدة",
+        "المعادي",
+        "الهرم",
+        "فيصل",
+        "الجيزة",
+        "القاهرة"
+      ],
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": [
@@ -38,190 +63,437 @@
           "Saturday",
           "Sunday"
         ],
-        "opens": "00:00",
-        "closes": "23:59"
+        "opens": "08:00",
+        "closes": "23:30"
       },
       "priceRange": "$$"
     }
     </script>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Tahoma, 'Segoe UI', Arial, sans-serif;
             line-height: 1.8;
             background-color: #f4f6f9;
-            color: #333;
+            color: #22333b;
             margin: 0;
             padding: 0;
         }
+
+        a {
+            text-decoration: none;
+        }
+
         header {
-            background: linear-gradient(135deg, #1a73e8, #0d47a1);
+            background: linear-gradient(135deg, #0d3b66, #001f3f);
             color: white;
-            padding: 3rem 1rem;
+            padding: 3.5rem 1rem 3rem;
             text-align: center;
         }
+
+        header .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            color: #ffffff;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
         header h1 {
             margin: 0 0 10px 0;
             font-size: 2.2rem;
+            line-height: 1.3;
         }
+
         header p {
-            margin: 0;
-            font-size: 1.1rem;
+            margin: 0 auto 1.5rem;
+            font-size: 1.15rem;
+            opacity: 0.95;
+            max-width: 750px;
+        }
+
+        .header-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #d9381e;
+            color: #ffffff;
+            padding: 0.9rem 2rem;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 1.15rem;
+            transition: opacity 0.2s ease;
+        }
+
+        .btn:hover {
             opacity: 0.9;
         }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid #ffffff;
+            color: #ffffff;
+        }
+
+        .btn-outline:hover {
+            background-color: #ffffff;
+            color: #0d3b66;
+        }
+
         .container {
-            max-width: 1000px;
-            margin: -2rem auto 2rem auto;
+            max-width: 1050px;
+            margin: -2rem auto 2.5rem auto;
             background: white;
             padding: 2.5rem;
             border-radius: 12px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.08);
             position: relative;
         }
+
         h2 {
-            color: #1a73e8;
-            border-right: 4px solid #1a73e8;
+            color: #0d3b66;
+            border-right: 4px solid #d9381e;
             padding-right: 12px;
             margin-top: 2rem;
             font-size: 1.4rem;
         }
+
         p {
             font-size: 1.05rem;
-            color: #555;
+            color: #4b5a63;
         }
+
+        /* سكشن الأعطال الشائعة */
+        .troubles-box {
+            background: #ffffff;
+            margin-top: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .trouble-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .trouble-item {
+            background: #fbfcfd;
+            border: 1px solid #e2eaf0;
+            border-right: 4px solid #d9381e;
+            padding: 1.2rem;
+            border-radius: 8px;
+        }
+
+        .trouble-item h4 {
+            color: #0d3b66;
+            margin: 0 0 0.4rem 0;
+            font-size: 1.05rem;
+        }
+
+        .trouble-item p {
+            margin: 0;
+            font-size: 0.92rem;
+            color: #556670;
+            line-height: 1.7;
+        }
+
         .grid-layout {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 2rem;
             margin-top: 2rem;
+            align-items: start;
         }
+
         @media(max-width: 768px) {
             .grid-layout {
                 grid-template-columns: 1fr;
             }
+            .container {
+                padding: 1.5rem;
+                margin-top: 1rem;
+            }
+            header h1 {
+                font-size: 1.8rem;
+            }
         }
+
         .dispatch-card {
             background: #f8fafc;
             border: 1px solid #e2e8f0;
             padding: 2rem;
             border-radius: 8px;
         }
+
         .dispatch-card h3 {
             margin-top: 0;
-            color: #1e293b;
+            color: #0d3b66;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .dispatch-card .form-subtitle {
+            font-size: 0.88rem;
+            color: #64748b;
             margin-bottom: 1.5rem;
         }
+
         .form-group {
-            margin-bottom: 1.2rem;
+            margin-bottom: 1.1rem;
         }
+
         .form-group label {
             display: block;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
             font-weight: 600;
             color: #334155;
+            font-size: 0.9rem;
         }
-        .form-group input, .form-group textarea {
+
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
             width: 100%;
             padding: 0.75rem;
             border: 1px solid #cbd5e1;
             border-radius: 6px;
-            font-size: 1rem;
-            box-sizing: border-box;
+            font-size: 0.95rem;
+            font-family: inherit;
+            background: #ffffff;
         }
+
+        .form-group input:focus, 
+        .form-group select:focus, 
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #0d3b66;
+        }
+
         .submit-btn {
-            background-color: #28a745;
+            background-color: #d9381e;
             color: white;
             border: none;
-            padding: 0.85rem 1.5rem;
-            font-size: 1rem;
+            padding: 0.9rem 1.5rem;
+            font-size: 1.05rem;
             font-weight: bold;
             border-radius: 6px;
             cursor: pointer;
             width: 100%;
-            transition: background 0.3s;
-            margin-top: 1rem;
+            transition: opacity 0.2s;
+            margin-top: 0.5rem;
         }
+
         .submit-btn:hover {
-            background-color: #218838;
+            opacity: 0.92;
         }
+
         .info-box {
-            background: #eef2ff;
-            border-right: 4px solid #6366f1;
+            background: #f0f5fa;
+            border-right: 4px solid #0d3b66;
             padding: 1.5rem;
             border-radius: 8px;
+        }
+
+        .info-box h3 {
+            margin-top: 0;
+            color: #0d3b66;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .info-box p {
+            margin: 0.6rem 0;
+            color: #1e293b;
+            font-size: 0.95rem;
+        }
+
+        .call-action-btn {
+            display: block;
+            background: #d9381e;
+            color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.15rem;
             margin-top: 1.5rem;
         }
-        .info-box p {
-            margin: 0.5rem 0;
-            color: #1e1b4b;
-        }
+
         .map-wrapper {
             margin-top: 2.5rem;
         }
+
         iframe {
             width: 100%;
-            height: 400px;
+            height: 380px;
             border: 0;
             border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        footer {
+            background-color: #001f3f;
+            color: #ffffff;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            font-size: 0.95rem;
+            color: #cbd5e1;
+        }
+
+        /* زر الاتصال العائم */
+        .float-call {
+            position: fixed;
+            left: 20px;
+            bottom: 20px;
+            background-color: #d9381e;
+            color: #ffffff;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 8px 25px rgba(217, 56, 30, 0.45);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
     </style>
 </head>
 <body>
 
     <header>
+        <span class="badge">فحص وإصلاح منزلي فوري لثلاجات سامسونج</span>
         <h1>صيانة ثلاجات سامسونج</h1>
-        <p>غرفة العمليات المركزية لتلقي بلاغات صيانة الثلاجات وتوجيه الفرق الفنية بالمنزل</p>
+        <p>غرفة العمليات المركزية لتلقي بلاغات أعطال ثلاجات وديب فريزر سامسونج وتوجيه الفنيين مباشرة للمنزل بأحدث معدات الفحص الرقمي.</p>
+        <div class="header-buttons">
+            <a href="tel:01156174546" class="btn">اتصل الآن: 01156174546</a>
+            <a href="#booking" class="btn btn-outline">حجز فحص أونلاين</a>
+        </div>
     </header>
 
     <div class="container">
         
-        <h2>آلية تشغيل واستقبال البلاغات</h2>
-        <p>نعمل من خلال نظام إدارة سحابي متكامل لتلقي أعطال ثلاجات سامسونج وتوزيعها فورياً على أقرب فني متخصص في نطاق القاهرة. نضمن فحص الجهاز بالمنزل بأحدث أجهزة التشخيص الرقمية دون أي حاجة لنقل الثلاجة.</p>
+        <h2>أبرز بلاغات أعطال ثلاجات سامسونج</h2>
+        <p>الأعطال الشائعة التي يتم تشخيصها وحلها منزلياً فور وصول الفني دون الحاجة لنقل الجهاز:</p>
 
-        <div class="grid-layout">
-            <!-- العمود الأول: نموذج تفاعلي لطلب الخدمة مكتمل وغير ناقص -->
+        <div class="troubles-box">
+            <div class="trouble-grid">
+                <div class="trouble-item">
+                    <h4>الثلاجة مش بتسقع تحت والفريزر شغال؟</h4>
+                    <p>انسداد فتحات التبريد، تراكم الثلج على الكويل، أو عطل حساس التبريد وهيتر دورة النوفروست التلقائية. يتم تفوير الثلج وتسليك مجرى الهواء فوراً.</p>
+                </div>
+
+                <div class="trouble-item">
+                    <h4>الموتور بيزن ويفصل أو تكتكة متكررة؟</h4>
+                    <p>تلف ريليه التشغيل أو مجموعة الحماية (الأوفرلود)، أو ضعف جهد كارتة الانفرتر الرقمية (Digital Inverter). يتم اختبار سحب الأمبير وعزل المشكلة.</p>
+                </div>
+
+                <div class="trouble-item">
+                    <h4>تسريب ميه داخل الكابينة أو تحت الأدراج؟</h4>
+                    <p>انسداد خرطوم صرف مياه إذابة الثلج الخلفي وتجمع المياه أسفل درج الخضار. نقوم بتسليك الصرف الداخلي وتعقيمه لمنع التسريب والروائح.</p>
+                </div>
+
+                <div class="trouble-item">
+                    <h4>ظهور وميض أو كود عطل على الشاشة؟</h4>
+                    <p>فحص حساسات الكابينة والفريزر (Defrost Sensor)، مروحة توزيع الهواء الداخلية، أو كارتة التحكم الرئيسية واستبدال التالف بنفس الكود.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-layout" id="booking">
+            <!-- العمود الأول: نموذج الحجز وربطه بالإيميل -->
             <div class="dispatch-card">
-                <h3>حجز موعد صيانة فوري</h3>
-                <form onsubmit="event.preventDefault(); alert('تم تسجيل طلبك بنجاح، سيتم الاتصال بك خلال دقائق لتأكيد موعد الفحص المنزلي.');">
+                <h3>حجز موعد فحص منزلي</h3>
+                <div class="form-subtitle">سجل بياناتك وسيتم تحويل الطلب للفني المختص فوراً</div>
+
+                <form action="https://formsubmit.co/ed3mnyit@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="طلب صيانة جديد - ثلاجات سامسونج الأزبكية">
+                    <input type="hidden" name="_template" value="table">
+
                     <div class="form-group">
-                        <label>اسم العميل الكريم</label>
-                        <input type="text" placeholder="اكتب اسمك هنا" required>
+                        <label for="name">اسم العميل:</label>
+                        <input type="text" id="name" name="الاسم" placeholder="اكتب اسمك الكريم" required>
                     </div>
+
                     <div class="form-group">
-                        <label>رقم الهاتف للتواصل</label>
-                        <input type="tel" placeholder="01xxxxxxxxx" required>
+                        <label for="phone">رقم الهاتف للتواصل:</label>
+                        <input type="tel" id="phone" name="رقم_الهاتف" placeholder="01xxxxxxxxx" required>
                     </div>
+
                     <div class="form-group">
-                        <label>وصف العطل في الثلاجة</label>
-                        <textarea rows="3" placeholder="مثال: ضعف التبريد أو توقف الموتور..." required></textarea>
+                        <label for="device">نوع وموديل الجهاز:</label>
+                        <select id="device" name="نوع_الجهاز" required>
+                            <option value="ثلاجة سامسونج نوفروست">ثلاجة سامسونج نوفروست</option>
+                            <option value="ثلاجة سامسونج انفرتر">ثلاجة سامسونج انفرتر Digital</option>
+                            <option value="ديب فريزر سامسونج">ديب فريزر سامسونج</option>
+                            <option value="ثلاجة سامسونج ساید باي ساید">ثلاجة سامسونج Side by Side</option>
+                        </select>
                     </div>
+
+                    <div class="form-group">
+                        <label for="area">العنوان والحي السكني:</label>
+                        <input type="text" id="area" name="العنوان" placeholder="مثال: وسط البلد / الأزبكية / شبرا / مدينة نصر" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="issue">وصف مشكلة العطل:</label>
+                        <textarea id="issue" name="وصف_العطل" rows="3" placeholder="مثال: الثلاجة مش بتسقع تحت وفيه تكتكة في الموتور..." required></textarea>
+                    </div>
+
                     <button type="submit" class="submit-btn">إرسال طلب الصيانة الآن</button>
                 </form>
             </div>
 
-            <!-- العمود الثاني: بيانات التواصل والتشغيل (مطابقة للخريطة حرفياً) -->
+            <!-- العمود الثاني: بيانات نقطة التشغيل المطابقة للـ NAP -->
             <div>
                 <div class="info-box">
                     <h3>بيانات نقطة التشغيل والخدمة</h3>
                     <p><strong>اسم النشاط:</strong> صيانة ثلاجات سامسونج</p>
                     <p><strong>العنوان الرئيسي:</strong> 13 ش بستان الدكه، عرابي، الأزبكية، محافظة القاهرة 4320103</p>
-                    <p><strong>رقم الخط الساخن:</strong> <a href="tel:+201025130063" dir="ltr" style="color: #1a73e8; font-weight: bold;">+20 102 513 0063</a></p>
-                    <p><strong>حالة التشغيل:</strong> يستقبل البلاغات ويقوم بالتوجيه على مدار الساعة (24/7)</p>
+                    <p><strong>رقم التواصل المباشر:</strong> 01156174546</p>
+                    <p><strong>البريد الإلكتروني:</strong> ed3mnyit@gmail.com</p>
+                    <p><strong>ساعات العمل:</strong> استقبال البلاغات وتوجيه الفرق الفنية يومياً من 8 صباحاً حتى 11:30 مساءً</p>
+                    <p><strong>نطاق التحرك المنزلي:</strong> الأزبكية، وسط البلد، رمسيس، شبرا، العباسية، حدائق القبة، الزيتون، مدينة نصر، مصر الجديدة، المعادي، الجيزة، والهرم.</p>
                 </div>
 
-                <div style="margin-top: 1.5rem; text-align: center;">
-                    <a href="tel:+201025130063" style="display: block; background: #1a73e8; color: white; padding: 1rem; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1rem;">اتصال مباشر بغرفة العمليات والفنيين</a>
-                </div>
+                <a href="tel:01156174546" class="call-action-btn">
+                    اتصال مباشر بالفني: 01156174546
+                </a>
             </div>
         </div>
 
-        <!-- خريطة الموقع الجغرافي -->
+        <!-- خريطة الموقع الجغرافي المطابقة -->
         <div class="map-wrapper">
-            <h2>النطاق الجغرافي لخدمات الدعم والتشغيل</h2>
+            <h2>نطاق تغطية الفرع الميداني</h2>
+            <p>شارع بستان الدكة، عرابي، الأزبكية والمناطق المحيطة بها في القاهرة الكبرى:</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.377450213563!2d31.243557499999998!3d30.054713399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458410007c50ddb%3A0xe8173d3ccd1011c5!2z2LXZitin2YbYqSDYq9mE2KfYrNin2Kog2LPYp9mF2LPZiNmG2Kw!5e0!3m2!1sar!2seg!4v1788297580870!5m2!1sar!2seg" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </div>
 
     </div>
 
-</body>
-</html>
+    <footer>
+        <p><strong>المركز الفني لفحص وإصلاح ثلاجات سامسونج المنزلية</strong></p>
+        <p>13 ش بستان الدكه، عرابي، الأزبكية، القاهرة | هاتف: 01156174546</p>
+        <p>جميع الحقوق محفوظة © 2026</p>
+    </footer>
+
+    <!-- زر الاتصال العائم للموبايل -->
+    <a href="tel:01156174546" class="float-
